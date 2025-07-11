@@ -1,0 +1,422 @@
+/* barra de navegacion */
+
+.navbar {
+    padding: 1rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand {
+    color: #0000ff;
+}
+
+.nav-item a {
+    color: #0000FF;
+    font-weight: bold;
+}
+
+/* Estilos generales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+.seccion-clara {
+    background-color: #50c3e647;
+}
+
+.seccion-oscura {
+    background-color: #010128;
+}
+
+/* Seccion hero */
+
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+    padding-top: 100px;
+}
+
+.hero-imagen-de-perfil {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/* biografia */
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.seccion-titulo {
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt", system-ui;
+    padding: 4rem;
+}
+
+.biografia-imagen {
+    width: 100%;
+    grid-column: 2/3;
+}
+
+.primera {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 2rem;
+}
+
+span {
+    color: #0000ff;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+/* cronologia */
+
+.year {
+    position: relative;
+    padding-top: 3rem;
+}
+
+.year::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 120%;
+    background: #0000ff;
+    left: 25px;
+    top: 10px;
+    margin-top: 3rem;
+}
+
+.year::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0000ff;
+    left: 15px;
+    top: 05px;
+    margin-top: 3rem;
+}
+
+.year-h3 {
+    padding-left: 44px;
+}
+
+.year-last {
+    position: relative;
+    padding-top: 3rem;
+}
+
+.year-last::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0000ff;
+    left: 15px;
+    top: 05px;
+    margin-top: 3rem;
+}
+
+.year-paragrap {
+    padding-left: 7rem;
+}
+
+/* logros */
+
+.card-body {
+    display: flex;
+
+}
+
+.card {
+    margin-bottom: 1rem;
+    padding: 0 2rem ;
+    box-shadow: 9px 9px 21px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 9px 9px 21px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 9px 21px -1px rgba(0,0,0,0.75);
+}
+
+i {
+    font-size: 3rem;
+    /* background-color: #50c3e647; */
+    padding: 10px 1rem;
+}
+
+.i-1 {
+    color: #c8c886;
+}
+
+.i-2 {
+    color: #0000ff;
+}
+
+.i-3 {
+    color: #ff0000;
+}
+
+.i-4 {
+    color: #008000;
+}
+
+
+.title-card {
+    padding-left: 1rem;
+    padding-top: 1.5625rem;
+}
+
+.card-text {
+    padding-bottom: 2rem;
+    /* padding-left: 7rem; */
+
+}
+
+.card-2 {
+    margin-top: 5rem;
+    background-color: #50c3e647;
+    padding: 2rem;
+}
+
+.h2 {
+    text-align: center;
+    font-weight: 800;
+}
+
+/* Frases celebres */
+
+.frases {
+    padding: 40px 40px 80px 40px;
+}
+
+.carousel-inner {
+    background-color:#50c3e647 ;
+    border-radius: 10px;
+    /* padding: 5rem; */
+}
+
+.frases .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frases-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.frases-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.frases-info p {
+    margin-bottom: 0;
+}
+
+/* Galería */
+
+.galeria img{
+    width: 100%;
+    height: 250px;
+}
+
+.galeria img:hover {
+    border: 5px solid #0000ff;
+}
+
+.galeria .col-lg-4 {
+    padding: 10px;
+    margin: 0;
+}
+
+.frase {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #0000ff;
+    margin-bottom: 4rem;    
+}
+
+/* contacto */
+
+.contacto .container {
+    /* max-width: 110px; */
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: #0000ff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px #ffffff;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.contacto button i {
+    color: #ffffff;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+    color: #000000;
+}
+
+.seccion-titulo-2 {
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt", system-ui;
+    padding: 4rem;
+    color: #ffffff;
+}
+
+/* .footer */
+
+.footer {
+    min-height: 500px;
+}
+
+.footer-icono {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: #ffffff;
+    border: 2px solid #0000FF;
+}
+
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+}
+
+
+/* adaptable responsivo */
+
+@media screen and (max-width: 768px ) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .contenedor {
+        display:block;
+    }
+
+    .fixed-top{
+        position: static;
+    }
+
+        
+}
+
+@media (min-width: 480px) {
+    .segunda {
+        grid-column: 1/3;
+    }
+}
+
+
+
+
